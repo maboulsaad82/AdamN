@@ -8,7 +8,7 @@ You can install the pre-compiled binary package directly via pip:
 
 ```bash
 # Install securely from:
-!pip install https://github.com/maboulsaad82/AdmaN/main/adamn_optimizer-0.1.0-cp312-cp312-linux_x86_64.whl
+!pip install "https://github.com/maboulsaad82/AdmaN/raw/main/adamn_optimizer-0.1.0-cp312-cp312-linux_x86_64.whl"
 ```
 
 ## Usage in Google Colab
