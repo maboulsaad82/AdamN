@@ -223,9 +223,33 @@ weight_decay = 1e-4
 bias_correction = "exact"
 ```
 
-For most experiments, start with the same learning rate you would normally try with AdamW.
+For different training regimes and task-specific hyperparameters, please refer to **Table 5** in the AdamN paper.
 
 ---
+## AdamN Hyperparameters Across Training Regimes
+
+The following table summarizes the AdamN settings used across different training regimes. For the complete experimental setup, please refer to **Table 5** in the AdamN paper.
+
+| Hyperparameter | CNN Full Training | CNN Transfer Learning | ViT Full Training | ViT Transfer Learning | NLP |
+|---|---:|---:|---:|---:|---:|
+| Learning rate, `η` | `1e-3` | `1e-4` | `1e-3` | `1e-4` | `1e-3` |
+| Betas, `(β1, β2, β3)` | `(0.9, 0.1, 0.999)` | `(0.9, 0.1, 0.999)` | `(0.9, 0.1, 0.999)` | `(0.9, 0.1, 0.999)` | `(0.4, 0.1, 0.999)` |
+| Epsilon, `ε` | `1e-8` | `1e-8` | `1e-8` | `1e-8` | `1e-8` |
+| Weight decay, `λ` | `1e-4` | `1e-5` | `5e-3` | `1e-4` | `1e-4` |
+| Batch size | `128` | `128` | `256` | `256` | `-` |
+| Epochs | `100` | `100` | `100` | `100` | `10` |
+
+**Notes**
+
+- `η`: base learning rate.
+- `β1`: momentum of the gradient estimate `g_t`.
+- `β2`: momentum of the nested direction estimate `v_t`.
+- `β3`: denominator memory.
+- `ε`: numerical stability term.
+- `λ`: decoupled weight decay.
+- AdamN was used without warmup and with cosine scheduling in the reported experiments.
+
+  ---
 
 ## AdamN vs AdamW
 
