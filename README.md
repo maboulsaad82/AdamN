@@ -7,14 +7,15 @@ AdamN optimizer with nested momentum and exact bias correction.
 You can install the pre-compiled binary package directly via pip:
 
 ```bash
-pip install adamn-optimizer
+# Install securely from:
+!pip install https://github.com/maboulsaad82/AdmaN/main/adamn_optimizer-0.1.0-cp312-cp312-linux_x86_64.whl
 ```
 
 ## Usage in Google Colab
 
 ```python
 import torch
-from adamn import AdamN
+from adamn_optimizer import AdamN
 
 model = torch.nn.Linear(10, 2)
 optimizer = AdamN(model.parameters(), lr=1e-3, betas=(0.9, 0.1, 0.999))
