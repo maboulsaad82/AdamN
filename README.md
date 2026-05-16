@@ -1,6 +1,7 @@
 # AdamN Optimizer
 
-AdamN optimizer with nested momentum and exact bias correction.
+The Next Evolution of Gradient Optimization
+AdamN optimizer with nested momentum and exact bias correction. Designed for optimal stability in AMP, bf16, and fp16 training environments.
 
 ## Installation
 
