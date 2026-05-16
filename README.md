@@ -280,6 +280,8 @@ Application No. **63/942,313**.
 
 Please refer to the repository license file for usage terms.
 
+---
+
 ## Installation
 
 You can install the pre-compiled binary package directly via pip:
@@ -288,6 +290,7 @@ You can install the pre-compiled binary package directly via pip:
 # Install securely from:
 !pip install "https://github.com/maboulsaad82/AdmaN/raw/main/adamn_optimizer-0.1.0-cp312-cp312-linux_x86_64.whl"
 ```
+---
 
 ## Usage in Google Colab
 
@@ -305,6 +308,4 @@ loss.backward()
 optimizer.step()
 ```
 
-## License and Patents
-This software is provided under a proprietary license. 
-The methods, algorithms, and techniques implemented in this software are currently the subject of a pending provisional patent application. Source code distribution is strictly prohibited.
+
