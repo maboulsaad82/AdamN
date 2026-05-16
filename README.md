@@ -19,6 +19,7 @@ A key part of AdamN is its **exact bias correction** for the nested momentum. Si
 
 AdamN keeps the practical spirit of AdamW: it uses an adaptive denominator, supports decoupled weight decay, and can be used as a drop-in optimizer in PyTorch training loops. The goal is not to make optimization more complicated, but to provide a smoother and more stable update direction that can reach useful performance faster in vision, language modeling, and fine-tuning workloads.
 
+Across the reported CNN and ViT experiments, AdamN consistently accelerated early-to-mid training progress, reaching the `40%–80%` accuracy milestones sooner than AdamW and other baselines in many regimes.
 ---
 
 ## Core Idea
