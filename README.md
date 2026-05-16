@@ -280,32 +280,3 @@ Application No. **63/942,313**.
 
 Please refer to the repository license file for usage terms.
 
----
-
-## Installation
-
-You can install the pre-compiled binary package directly via pip:
-
-```bash
-# Install securely from:
-!pip install "https://github.com/maboulsaad82/AdmaN/raw/main/adamn_optimizer-0.1.0-cp312-cp312-linux_x86_64.whl"
-```
----
-
-## Usage in Google Colab
-
-```python
-import torch
-from adamn_optimizer import AdamN
-
-model = torch.nn.Linear(10, 2)
-optimizer = AdamN(model.parameters(), lr=1e-3, betas=(0.9, 0.1, 0.999), weight_decay=1e-4, decoupled_wd=True, bias_correction="exact")
-
-# Training loop
-optimizer.zero_grad()
-loss = model(torch.randn(1, 10)).sum()
-loss.backward()
-optimizer.step()
-```
-
-
