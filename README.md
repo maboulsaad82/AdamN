@@ -237,7 +237,7 @@ The following table summarizes the AdamN settings used across different training
 | Epsilon, `ε` | `1e-8` | `1e-8` | `1e-8` | `1e-8` | `1e-8` |
 | Weight decay, `λ` | `1e-4` | `1e-5` | `5e-3` | `1e-4` | `1e-4` |
 | Batch size | `128` | `128` | `256` | `256` | `-` |
-| Epochs | `100` | `100` | `100` | `100` | `10` |
+
 
 **Notes**
 
