@@ -251,7 +251,7 @@ The following table summarizes the AdamN settings used across different training
 - AdamN was used without warmup and with cosine scheduling in the reported experiments.
 
   ---
-## Time to Reach Val Accuracy Milestone 
+## Time to Reach Val Accuracy Milestone on ViT with transfer learning
 
 | Optimizer                      | 40%             | 50%             | 60%             | 70%             | 75%             | 80%    |     
 |---|---:|---:|---:|---:|---:|---:|
