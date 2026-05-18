@@ -251,7 +251,25 @@ The following table summarizes the AdamN settings used across different training
 - AdamN was used without warmup and with cosine scheduling in the reported experiments.
 
   ---
+## Time to Reach Val Accuracy Milestone 
 
+| Optimizer                      | 40%             | 50%             | 60%             | 70%             | 75%             | 80%    |     
+|---|---:|---:|---:|---:|---:|---:|
+|Shampoo                        | 242.86s (E3 )  | 242.86s (E3 )  | 242.86s (E3 )  | 324.41s (E4 )  | 406.02s (E5 )  | 406.02s (E5 ) |
+|Sophia                         |  40.96s (E1 )  |  82.07s (E2 )  |  82.07s (E2 )  |  82.07s (E2 )  | 572.02s (E14)  | 776.54s (E19) |
+|AdEMAMix                       |  41.39s (E1 )  |  41.39s (E1 )  |  41.39s (E1 )  |  82.93s (E2 )  |  82.93s (E2 )  | 662.93s (E16) |
+|SOAP                           | 165.20s (E2 )  | 165.20s (E2 )  | 246.94s (E3 )  | 246.94s (E3 )  | 246.94s (E3 )  | 246.94s (E3 ) |
+|MARS                           |  42.80s (E1 )  |  42.80s (E1 )  |  42.80s (E1 )  |  85.72s (E2 )  |  85.72s (E2 )  |  85.72s (E2 ) |
+|Muon                           |  87.71s (E2 )  |  87.71s (E2 )  |  87.71s (E2 )  | 131.71s (E3 )  | 131.71s (E3 )  | 131.71s (E3 ) |
+|**AdamN**                          |  **41.53s (E1 )**  |  **41.53s (E1 )**  |  **41.53s (E1 )**  |  **41.53s (E1 )**  |  **41.53s (E1 )**  |  **41.53s (E1 )** |
+|AdamW                          |  40.49s (E1 )  |  40.49s (E1 )  |  40.49s (E1 )  |  81.12s (E2 )  |  81.12s (E2 )  | 606.81s (E15) |
+|Adam                           |  40.99s (E1 )  |  40.99s (E1 )  |  40.99s (E1 )  |  82.03s (E2 )  | Not Reached     | Not Reached   | 
+|Lion                           |  81.74s (E2 )  |  81.74s (E2 )  |  81.74s (E2 )  |  81.74s (E2 )  |  81.74s (E2 )  |  81.74s (E2 ) |
+|Adan                           |  42.04s (E1 )  |  84.18s (E2 )  |  84.18s (E2 )  |  84.18s (E2 )  |  84.18s (E2 )  |  84.18s (E2 ) |
+|AdaBelief                      |  82.51s (E2 )  |  82.51s (E2 )  |  82.51s (E2 )  |  82.51s (E2 )  |  82.51s (E2 )  | 123.98s (E3 ) |
+|SGD                            | 204.07s (E5 )  | 204.07s (E5 )  | 244.89s (E6 )  | 285.88s (E7 )  | 367.69s (E9 )  | 490.09s (E12) |
+
+---
 ## AdamN vs AdamW
 
 ```text
