@@ -52,7 +52,7 @@ The update direction is based on the bias-corrected nested momentum `a_t`, while
 ## Mathematical Form
 
 ```text
-$$v_t = β1 v_{t-1} + (1 - β1) g_t$$
+v_t = β1 v_{t-1} + (1 - β1) g_t
 ```
 
 ```text
